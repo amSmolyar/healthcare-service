@@ -1,21 +1,22 @@
-package ru.netology.patient;
+package ru.netology;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
+import ru.netology.entity.BloodPressure;
+import ru.netology.entity.HealthInfo;
+import ru.netology.entity.PatientInfo;
+import ru.netology.repository.PatientInfoFileRepository;
+import ru.netology.repository.PatientInfoRepository;
+import ru.netology.service.alert.SendAlertService;
+import ru.netology.service.alert.SendAlertServiceImpl;
+import ru.netology.service.medical.MedicalService;
+import ru.netology.service.medical.MedicalServiceImpl;
 
 import java.io.File;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
-import ru.netology.patient.entity.*;
-import ru.netology.patient.repository.PatientInfoFileRepository;
-import ru.netology.patient.repository.PatientInfoRepository;
-import ru.netology.patient.service.alert.SendAlertService;
-import ru.netology.patient.service.alert.SendAlertServiceImpl;
-import ru.netology.patient.service.medical.MedicalService;
-import ru.netology.patient.service.medical.MedicalServiceImpl;
 
 public class Main {
 

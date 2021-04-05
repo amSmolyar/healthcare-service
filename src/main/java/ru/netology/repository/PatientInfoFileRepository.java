@@ -1,4 +1,4 @@
-package ru.netology.patient.repository;
+package ru.netology.repository;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.util.Scanner;
 import java.util.UUID;
 
-import ru.netology.patient.entity.PatientInfo;
+import ru.netology.entity.PatientInfo;
 
 public class PatientInfoFileRepository implements PatientInfoRepository {
 
